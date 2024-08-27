@@ -75,9 +75,13 @@ function playGame(){
             humanScore+=1;
         }else if(result==='defeat'){
             computerScore+=1;
-        }else{
-            computerScore+=0;
+        }else if(result==='draw'){
             humanScore+=0;
+            computerScore+=0;
+        }
+        else{
+            computerScore+=1;
+
         }
     }
     console.log(`Human Score ${humanScore} and computer score ${computerScore}`);
